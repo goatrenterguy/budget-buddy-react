@@ -1,0 +1,8 @@
+#HomeBanner {
+  background: url('./assets/home-banner-calculator.jpg') no-repeat fixed center;
+  height: 300px;
+  position: relative;
+  background-size: cover;
+  z-index: -2;
+  
+}

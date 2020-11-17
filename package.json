@@ -2,7 +2,6 @@
   "name": "budget-buddy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://csci491-01.cs.montana.edu/~p55j144/budget-buddy-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",

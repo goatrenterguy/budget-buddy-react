@@ -24,7 +24,10 @@ function NavHeader(isLoggedIn) {
             :
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/Summary">Summary</Nav.Link>
+                    <Nav.Link href="/Transactions">Transactions</Nav.Link>
+                    <Nav.Link href="/Budgets">Budgets</Nav.Link>
                     <Nav.Link href="/About">About</Nav.Link>
                     <Nav.Link href="/Contact">Contact</Nav.Link>
                 </Nav>

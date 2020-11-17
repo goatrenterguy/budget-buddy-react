@@ -1,5 +1,5 @@
 import React from "react"
-import './Home.css'
+import '../css/Home.css'
 const { Row, Card, Form, Button, Col } = require("react-bootstrap");
 function Home() {
     return (

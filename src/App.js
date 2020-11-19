@@ -1,37 +1,37 @@
-import React, { Component } from 'react';
-import './css/App.css';
+import React, { Component } from "react";
+import "./css/App.css";
 
-import NavHeader from './components/nav/NavHeader';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import NoMatch from './Pages/NoMatch';
-import Layout from './components/Layout';
-import Summary from './Pages/Summary';
-import Transactions from './Pages/Transactions';
-import Budgets from './Pages/Budgets';
+import NavHeader from "./components/nav/NavHeader";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import NoMatch from "./Pages/NoMatch";
+import Layout from "./components/Layout";
+import Summary from "./Pages/Summary";
+import Transactions from "./Pages/Transactions";
+import Budgets from "./Pages/Budgets";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <NavHeader auth={this.props.auth}/>
-        <Layout>
-          <Router>
+        <Router>
+          <NavHeader auth={this.props.auth} />
+          <Layout>
             <Switch>
-              <Route  path="/" component={Home} />
-              <Route  path="/about" component={About} />
-              <Route  path="/Contact" component={Contact} />
-              <Route  path="/Summary" component={Summary} />
-              <Route  path="/Transactions" component={Transactions} />
-              <Route  path="/Budgets" component={Budgets} />
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/Contact" component={Contact} />
+              <Route exact path="/Summary" component={Summary} />
+              <Route exact path="/Transactions" component={Transactions} />
+              <Route exact path="/Budgets" component={Budgets} />
               <Route component={NoMatch} />
             </Switch>
-          </Router>
-        </Layout>
+          </Layout>
+        </Router>
       </React.Fragment>
-    )
+    );
   }
 }
 

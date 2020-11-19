@@ -3,6 +3,7 @@ import './NavHeader.css';
 import LoginModal from '../login/LoginModal.js';
 import SignUpModal from '../login/SignUpModal.js';
 import { Nav, Navbar, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
 
 function NavHeader(isLoggedIn) {
@@ -12,24 +13,24 @@ function NavHeader(isLoggedIn) {
         return isLoggedIn ?
         <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/Summary">Summary</Nav.Link>
-                    <Nav.Link href="/Transactions">Transactions</Nav.Link>
-                    <Nav.Link href="/Budgets">Budgets</Nav.Link>
-                    <Nav.Link href="/About">About</Nav.Link>
-                    <Nav.Link href="/Contact">Contact</Nav.Link>
+                    <Link className='nav-link' as={Link} to="/">Home</Link>
+                    <Link className='nav-link' as={Link} to="/Summary">Summary</Link>
+                    <Link className='nav-link' as={Link} to="/Transactions">Transactions</Link>
+                    <Link className='nav-link' as={Link} to="/Budgets">Budgets</Link>
+                    <Link className='nav-link' as={Link} to="/About">About</Link>
+                    <Link className='nav-link' as={Link} to="/Contact">Contact</Link>
                 </Nav>
                 <Button className="float-right" variant="secondary" >Logout</Button>
             </Navbar.Collapse>
             :
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/Summary">Summary</Nav.Link>
-                    <Nav.Link href="/Transactions">Transactions</Nav.Link>
-                    <Nav.Link href="/Budgets">Budgets</Nav.Link>
-                    <Nav.Link href="/About">About</Nav.Link>
-                    <Nav.Link href="/Contact">Contact</Nav.Link>
+                    <Link className='nav-link' as={Link} to="/">Home</Link>
+                    <Link className='nav-link' as={Link} to="/Summary">Summary</Link>
+                    <Link className='nav-link' as={Link} to="/Transactions">Transactions</Link>
+                    <Link className='nav-link' as={Link} to="/Budgets">Budgets</Link>
+                    <Link className='nav-link' as={Link} to="/About">About</Link>
+                    <Link className='nav-link' as={Link} to="/Contact">Contact</Link>
                 </Nav>
                 <Button variant="secondary" onClick={() => setLoginModalShow(true)}>Login</Button>
                 <Button variant="primary" onClick={() => setLoginModalShow(true)}>Sign Up</Button>
@@ -37,7 +38,7 @@ function NavHeader(isLoggedIn) {
     }
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="/">Budget Buddy</Navbar.Brand>
+            <Navbar.Brand to="/">Budget Buddy</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 {loggedIn(isLoggedIn)}
             <LoginModal

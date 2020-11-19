@@ -5,8 +5,8 @@ function BudgetUsageGraph() {
   return (
     <div>
       <Chart
-        // width={'500px'}
-        // height={'300px'}
+        width={'300px'}
+        height={'300px'}
         chartType="BarChart"
         loader={<div>Loading Bar Chart</div>}
         diffdata={{

@@ -27,7 +27,7 @@ function Home() {
                 </Col>
                 <Col>
 					<p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.
+                        Budget Buddy is for people like you. People who want control over their money choose us because we never ask for your bank account or credit card information. And best of all? It's completely free. You can make as many budgets as you want and we'll never charge you a cent.
 					</p>
                 </Col>
             </Row>
